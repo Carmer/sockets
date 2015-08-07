@@ -23,7 +23,7 @@ socket.on('userConnection', function(count) {
 
 
 socket.on('voteCount', function(votes) {
-    voteTally.innerText = "Vote Breakdown: "
+    voteTally.innerText = "Your Vote Breakdown: "
 
   for (vote in votes){
     voteTally.appendChild( document.createTextNode(" " + vote + ": " + votes[vote]) )
